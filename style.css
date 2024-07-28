@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: "Idroid";
+        src: url(Fontes_d10/idroid.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0px;
+    background-color: #EBE5C5;
+}
+
+#Cabeçalho {
+    min-width: 150px;
+    width: 100%;
+    background-image: linear-gradient(to top, #063d1e 1%, #2EA665);
+    padding-top: 40px;
+}
+#Cabeçalho > #Titulo-cabeçalho {
+    color: white;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48px;
+    margin: 0px;
+    text-align: center;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+#Cabeçalho > #texto-cabeçalho {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 300px;
+    font-size: 19px;
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.900);
+    margin: auto;
+    padding: 0px 10px 50px 10px;
+}
+
+#Navegação-Cabeçalho > .Links {
+    color: #7ce7ac;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none; 
+    padding: 10px;
+    border-radius: 6px;
+    transition: all 0.5s ease-in-out;
+}
+#Navegação-Cabeçalho {
+    background-color: #063d1e;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.300);
+}
+
+#Navegação-Cabeçalho > .Links:hover {
+    transition: all 0.5s ease-in-out;
+    background-color: #2FA765;
+    color: #053118;
+}
+
+
+#Contéudo > #introdução {
+    background-color: white;
+    height: auto;
+    width: 79.01%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto auto 30px auto;
+}
+
+@media(max-width: 1080px) {
+    #introdução {
+        width: 100%;
+    }
+}
+
+
+#introdução > #titulo-introdução {
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    font-family: "Idroid";
+    font-weight: normal;
+    color: #063d1e;
+    font-size: 1.8em;
+}
+.paragrafos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    text-indent: 30px;
+    margin: 15px 0px 20px 0px;
+    color: black;
+    line-height: 1.93em;
+}
+.grife-textos {
+    font-weight: bold;
+    text-decoration: none;
+    color: #063d1e;
+    background-color: #83e1ad;
+    padding: 2px 6px;
+}
+
+.grifado {
+    font-weight: bold;
+    color: #1a5c37;
+}
+
+.links-textos {
+    text-decoration: none;
+}
+
+.links-textos::after {
+    content: '\00A0\1F517';
+}
+
+.links-textos:hover {
+    text-decoration: underline;
+}
+
+.h2-personalizado{
+    font-family: "Idroid";
+    color: #1a5c37;
+    background-image: linear-gradient(to right, #83e1ad, #00000000);
+    margin: 0px 0px 0px 0px;
+    text-indent: 8px;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+
+img {
+    width: 100%;
+}
+
+.img-pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.fundo-video {
+    background-image: linear-gradient(to top, #063d1e 25%, #2EA665);
+    padding: 50px 50px 50px 50px;
+    margin: 0px -20px 30px -20px;
+}
+
+.video-caixa {
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.video-caixa > iframe {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+
+#quer-aprender-mais {
+    background-color: #83e1ad;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+#quer-aprender-mais > #h3-aside {
+    background-color: #1a5c37;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+    color: white;
+    font-weight: bolder;
+}
+
+#quer-aprender-mais > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    column-width: auto;
+    column-count: 2;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media(max-width: 450px) {
+    #quer-aprender-mais > ul { 
+        columns: 1;
+    }
+    
+}
+
+#quer-aprender-mais > li {
+    text-align: left;
+}
+
+#Rodape {
+    background-color: #063d1e;
+    color: white;
+    padding: 5px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#Rodape > p {
+    margin: 0px;
+}
+
+.grife {
+    font-weight: bolder;
+}
